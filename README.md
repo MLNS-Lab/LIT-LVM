@@ -154,6 +154,15 @@ To enforce SparseFM, we use **very high values** of this regularization strength
 - `gamma` in the code corresponds to the latent structure regularization strength discussed in the paper.
 - No modifications to the script are needed—only the `param_grid_1` setting must be adjusted.
 
+## Real Data Experiments – HierNet Baselines
+
+To evaluate HierNet baselines on real data, we use R scripts specifically designed for hierarchical interaction models:
+
+- `logreg_experiment.R` for classification tasks
+- `linreg_experiment.R` for regression tasks
+
+These scripts implement the HierNet model which learns hierarchical interactions between features using a structured regularization approach.
+
 ## Simulated Data Experiments – Logistic Regression
 
 We perform simulation experiments to evaluate the performance of **LIT-LVM**, **ElasticNet**, and **Factorization Machines (FM)** under controlled conditions. Each method has its own experiment file:
